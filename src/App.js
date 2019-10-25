@@ -45,13 +45,21 @@ function App(props) {
 				<Navbar.Collapse>
 					<Nav pullRight>
 						{isAuthenticated
-							? <NavItem onClick={handleLogout}>Logout</NavItem>
+							?<> 
+							<LinkContainer to="/cart">
+									<NavItem>Carrinho</NavItem>
+								</LinkContainer>
+							<LinkContainer to="/history">
+									<NavItem>Histórico</NavItem>
+								</LinkContainer> 
+							<NavItem onClick={handleLogout}>Sair</NavItem>
+							</>
 							: <>
 								<LinkContainer to="/signup">
-									<NavItem>Signup</NavItem>
+									<NavItem>Cadastrar</NavItem>
 								</LinkContainer>
 								<LinkContainer to="/login">
-									<NavItem>Login</NavItem>
+									<NavItem>Entrar</NavItem>
 								</LinkContainer>
 							</>
 						}

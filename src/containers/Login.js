@@ -44,7 +44,7 @@ export default function Login(props) {
           />
         </FormGroup>
         <FormGroup controlId="password" bsSize="large">
-          <ControlLabel>Password</ControlLabel>
+          <ControlLabel>Senha</ControlLabel>
           <FormControl
             type="password"
             value={fields.password}
@@ -58,7 +58,7 @@ export default function Login(props) {
           isLoading={isLoading}
           disabled={!validateForm()}
         >
-          Login
+          Entrar
         </LoaderButton>
       </form>
     </div>

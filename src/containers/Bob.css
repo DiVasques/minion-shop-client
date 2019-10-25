@@ -1,0 +1,29 @@
+.caption h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.col-align-top {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+ 
+.col-align-center {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.col-align-bottom {
+  float: none;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.v-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
